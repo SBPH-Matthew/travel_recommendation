@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>About Us - TravelBloom</title>
+</head>
+<body class="text-white">
+  <!-- Gradient + Image Background -->
+  <div class="main bg-cover bg-center min-h-screen bg-[linear-gradient(to_right,rgba(19,78,74,0.9),rgba(45,212,191,0.5)),url('https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg')]">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 flex flex-col gap-5 md:gap-0 md:flex-row bg-black/60 p-4 items-center justify-between">
+      <h1 class="italic text-white font-bold text-lg">TravelBloom</h1>
+
+      <div class="flex gap-8 items-center font-medium text-white text-lg">
+        <a href="travel_recommendation.html" class="hover:font-bold">Home</a>
+        <a href="about_us.html" class="hover:font-bold border-b-2 border-teal-400">About Us</a>
+        <a href="contact_us.html" class="hover:font-bold">Contact Us</a>
+      </div>
+
+      <div class="flex relative min-w-[460px] bg-white rounded-full">
+        <input class="rounded-full rounded-e-lg w-full px-3 py-3 font-bold text-teal-600 placeholder:text-teal-700 placeholder:font-bold" placeholder="Enter a destination or keyword"/>
+        <div class="flex items-center gap-2 pe-4">
+          <button class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Search</button>
+          <button class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Clear</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Social Vertical Icons -->
+    <div class="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6">
+      <div class="w-px h-32 bg-white/60"></div>
+      <div class="flex flex-col gap-6 text-xl">
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="px-20 py-20">
+      <h1 class="text-6xl font-extrabold mb-8">ABOUT US</h1>
+
+      <p class="max-w-4xl text-lg leading-relaxed bg-black/40 p-6 rounded-xl backdrop-blur-sm">
+        Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers.
+        Our mission is to provide the best experience for people traveling to different destinations around the world. 
+        Our values include integrity, innovation, customer satisfaction, and teamwork. 
+        We believe in putting our customers first and working together to achieve our goals. 
+        Feel free to explore our website to learn more about what we offer!
+      </p>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="px-20 pb-20">
+      <h2 class="text-5xl font-extrabold mb-10">Our <span class="text-teal-300">Team</span></h2>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl">
+        <!-- Team Card 1 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center">
+          <div class="text-2xl font-semibold mb-2">John Doe</div>
+          <p class="text-sm mb-4">John is responsible for overseeing company strategy and leadership initiatives.</p>
+          <span class="bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-medium">CEO</span>
+        </div>
+
+        <!-- Team Card 2 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center">
+          <div class="text-2xl font-semibold mb-2">Celina Thomas</div>
+          <p class="text-sm mb-4">Celina Thomas is responsible for managing team operations and project execution.</p>
+          <span class="bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-medium">Team Lead</span>
+        </div>
+
+        <!-- Team Card 3 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center">
+          <div class="text-2xl font-semibold mb-2">Mike Tysen</div>
+          <p class="text-sm mb-4">Mike Tysen is responsible for ensuring timely and efficient delivery of client solutions.</p>
+          <span class="bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-medium">Delivery Head</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

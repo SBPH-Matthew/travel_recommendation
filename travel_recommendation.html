@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>TravelBloom | Explore Dream Destination</title>
+</head>
+
+<body class="text-white">
+  <div class="main bg-cover bg-center min-h-screen bg-[linear-gradient(to_right,rgba(19,78,74,0.9),rgba(45,212,191,0.5)),url('https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg')]">
+
+    <nav class="sticky top-0 flex flex-col gap-5 md:gap-0 md:flex-row bg-black/60 p-4 items-center justify-between">
+      <h1 class="italic text-white font-bold text-lg">TravelBloom</h1>
+
+      <div class="flex gap-8 items-center font-medium text-white text-lg">
+        <a href="#" class="hover:font-bold border-b-2 border-teal-400">Home</a>
+        <a href="about_us.html" class="hover:font-bold">About Us</a>
+        <a href="contact_us.html" class="hover:font-bold">Contact Us</a>
+      </div>
+
+      <div class="flex relative min-w-[460px] bg-white rounded-full">
+        <input id="searchInput" class="rounded-full rounded-e-lg w-full px-3 py-3 font-bold text-teal-600 placeholder:text-teal-700 placeholder:font-bold" placeholder="Enter a destination or keyword" />
+        <div class="flex items-center gap-2 pe-4">
+          <button onclick="searchDestination()" class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Search</button>
+          <button onclick="clearSearch()" class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Clear</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6">
+      <div class="w-px h-32 bg-white/60"></div>
+      <div class="flex flex-col gap-6 text-xl">
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="p-20 flex flex-col gap-16 items-center">
+      <div class="text-center">
+        <h1 class="text-6xl font-extrabold leading-tight">EXPLORE<br/>DREAM DESTINATION</h1>
+        <p class="mt-6 text-white/90 leading-relaxed max-w-2xl mx-auto">
+          Discover the best destinations around the world — from breathtaking beaches to serene temples and bustling cities.
+        </p>
+      </div>
+
+      <div id="resultsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full justify-center">
+        <p id="noResults" class="col-span-full text-center text-white/70 hidden">No destinations found. Try another keyword!</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>

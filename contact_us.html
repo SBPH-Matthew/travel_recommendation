@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Contact Us - TravelBloom</title>
+</head>
+<body class="text-white">
+  <!-- Gradient + Image Background -->
+  <div class="main bg-cover bg-center min-h-screen bg-[linear-gradient(to_right,rgba(19,78,74,0.9),rgba(45,212,191,0.5)),url('https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg')]">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 flex flex-col gap-5 md:gap-0 md:flex-row bg-black/60 p-4 items-center justify-between">
+      <h1 class="italic text-white font-bold text-lg">TravelBloom</h1>
+
+      <div class="flex gap-8 items-center font-medium text-white text-lg">
+        <a href="travel_recommendation.html" class="hover:font-bold">Home</a>
+        <a href="about_us.html" class="hover:font-bold">About Us</a>
+        <a href="contact_us.html" class="hover:font-bold border-b-2 border-teal-400">Contact Us</a>
+      </div>
+
+      <div class="flex relative min-w-[460px] bg-white rounded-full">
+        <input class="rounded-full rounded-e-lg w-full px-3 py-3 font-bold text-teal-600 placeholder:text-teal-700 placeholder:font-bold" placeholder="Enter a destination or keyword"/>
+        <div class="flex items-center gap-2 pe-4">
+          <button class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Search</button>
+          <button class="bg-teal-600 hover:bg-teal-600/80 text-white font-medium px-2 py-2 rounded-lg cursor-pointer">Clear</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Social Vertical Icons -->
+    <div class="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6">
+      <div class="w-px h-32 bg-white/60"></div>
+      <div class="flex flex-col gap-6 text-xl">
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-teal-400"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="px-20 py-24 flex flex-col lg:flex-row justify-between items-start gap-16">
+      <div class="max-w-md">
+        <h1 class="text-6xl font-extrabold mb-6">CONTACT US</h1>
+        <p class="text-lg text-white/90 leading-relaxed">
+          Get in touch with us! Whether you have a question, feedback, or partnership idea — we’d love to hear from you.
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl w-full max-w-lg shadow-xl">
+        <div class="mb-6">
+          <label class="block text-sm font-semibold mb-2">Name</label>
+          <input type="text" placeholder="Your name" class="w-full p-3 rounded-lg bg-white/20 text-white placeholder-white/70 outline-none focus:ring-2 focus:ring-teal-400" />
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-sm font-semibold mb-2">Email</label>
+          <input type="email" placeholder="Your email" class="w-full p-3 rounded-lg bg-white/20 text-white placeholder-white/70 outline-none focus:ring-2 focus:ring-teal-400" />
+        </div>
+
+        <div class="mb-8">
+          <label class="block text-sm font-semibold mb-2">Message</label>
+          <textarea rows="5" placeholder="Write your message here..." class="w-full p-3 rounded-lg bg-white/20 text-white placeholder-white/70 outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-500 text-white font-semibold py-3 rounded-lg transition-all duration-300">
+          Submit
+        </button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
